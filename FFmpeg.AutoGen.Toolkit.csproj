@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<Compile Remove="FFmpeg\**" />
+		<Compile Remove="Sample\**" />
+		<EmbeddedResource Remove="FFmpeg\**" />
+		<EmbeddedResource Remove="Sample\**" />
+		<None Remove="FFmpeg\**" />
+		<None Remove="Sample\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove=".editorconfig" />
+		<None Remove="Directory.Packages.props" />
+		<None Remove="LICENSE" />
+		<None Remove="README.md" />
+	</ItemGroup>
+
+	<!--<PropertyGroup>
+     <MinVerTagPrefix>v</MinVerTagPrefix>
+     <MinVerVerbosity>normal</MinVerVerbosity>
+	  <MinVerMinimumMajorMinor>4.3</MinVerMinimumMajorMinor>
+  </PropertyGroup>-->
+
+	<!--<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CodeAnalysisRuleSet>FFmpeg.AutoGen.Toolkit.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CodeAnalysisRuleSet>FFmpeg.AutoGen.Toolkit.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>-->
+
+	<ItemGroup>
+
+		<PackageReference Include="FFmpeg.AutoGen.Bindings.DynamicallyLoaded" />
+
+		<PackageReference Include="MinVer">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+
+		<!--<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>-->
+
+		<!--<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />-->
+	</ItemGroup>
+
+	<ItemGroup Condition="$(TargetFramework.StartsWith('netstandard2.0'))">
+		<PackageReference Include="System.Memory" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EditorConfigFiles Remove="D:\Git\FFmpeg.AutoGen.Toolkit\.editorconfig" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EditorConfigFiles Remove="D:\Git\FFmpeg.AutoGen.Toolkit\.editorconfig" />
+	</ItemGroup>
+
+</Project>

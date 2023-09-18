@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+
+		<PackageReference Include="OpenCvSharp4" />
+		<PackageReference Include="OpenCvSharp4.runtime.win" />
+		<PackageReference Include="OpenCvSharp4.Windows" />
+		<PackageReference Include="OpenCvSharp4.Extensions" />
+
+		<PackageReference Include="Emgu.CV" />
+		<PackageReference Include="Emgu.CV.Bitmap" />
+		<PackageReference Include="Emgu.CV.runtime.windows" />
+		<PackageReference Include="SixLabors.ImageSharp.Drawing" />
+
+		<PackageReference Include="TouchSocket.AspNetCore" />
+		<PackageReference Include="TouchSocket.Core" />
+		<PackageReference Include="DirectShowLib.Standard" />
+		<PackageReference Include="FFmpeg.AutoGen.Bindings.DynamicallyLoaded" />
+		<PackageReference Include="SixLabors.ImageSharp" />
+		<PackageReference Include="System.Drawing.Common" />
+		<PackageReference Include="System.Collections.Immutable" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\FFmpeg.AutoGen.Toolkit.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFmpeg.AutoGen.Toolkit", "FFmpeg.AutoGen.Toolkit.csproj", "{4FBC7949-3300-4A72-8BF6-F51C3F34A97B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Build", ".Build", "{55763A62-CC06-437C-9398-CC82EA5DA9C4}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Packages.props = Directory.Packages.props
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample", "Sample\Sample.csproj", "{791A13A2-4DC5-4D3C-BA2A-F005476CB670}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FBC7949-3300-4A72-8BF6-F51C3F34A97B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBC7949-3300-4A72-8BF6-F51C3F34A97B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBC7949-3300-4A72-8BF6-F51C3F34A97B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBC7949-3300-4A72-8BF6-F51C3F34A97B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{791A13A2-4DC5-4D3C-BA2A-F005476CB670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{791A13A2-4DC5-4D3C-BA2A-F005476CB670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{791A13A2-4DC5-4D3C-BA2A-F005476CB670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{791A13A2-4DC5-4D3C-BA2A-F005476CB670}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56A2F1F5-D882-4FC9-9918-FAD1835E960E}
+	EndGlobalSection
+EndGlobal
